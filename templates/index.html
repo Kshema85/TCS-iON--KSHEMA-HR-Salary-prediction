@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HR Salary Prediction</title>
+    <style>
+
+    </style>
+        <link rel='stylesheet' href='/static/css/style.css'>
+</head>
+<center>
+        <div class="topnav">
+              <a class="active" href="{{url_for('home')}}" target="_blank">Home</a>
+              <a href="#index"  class='active'>Index</a>
+             
+
+       </div></center>
+<body background="/static/images/hr6.jpg">
+</h1>
+     <!-- Input form -->
+<div class = "input form">
+  <form action="{{ url_for('predict') }}" method="post">
+    
+     <h3 style='color: blue'>Please Enter the details here ! </h3>
+     <br><label for="age">Age</label>
+     <input type="text" name="age" placeholder="age">
+     </br> 
+     <br><label for="workclass">Workclass</label>
+     <input type="text" name="workclass" placeholder="workclass">
+     </br>
+     <br><label for="education">Education</label>
+     <input type="text" name="education" placeholder="education">    
+     </br>
+     <br><label for="marital-status">Marital Status</label>
+     <input type="text" name="marital-status" placeholder="marital-status">
+     </br>
+     
+     <br><label for="occupation">Occupation</label>
+     <input type="text" name="occupation" placeholder="occupation">    
+     </br>
+     <br><label for="relationship">Relationship</label>
+     <input type="text" name="relationship" placeholder="relationship">
+     </br>
+     <br><label for="race">Race</label>
+     <input type="text" name="race" placeholder="race">
+     </br>    
+     
+     <br><label for="sex">Sex</label>
+     <input type="text" name="sex" placeholder="sex">    
+     </br>
+         
+     
+     <br><label for="hours-per-week">hours-per-week</label>
+     <input type="text" name="hours-per-week" placeholder="hours-per-week">    
+     </br>
+     <br><label for="native-country">Native Country</label>
+     <input type="text" name="native-country" placeholder="native-country">
+     </br>
+        
+     <br><button type="submit" name="answer">Submit</button></br>
+  </form>
+
+</div>
+
+</body>
+</html>
